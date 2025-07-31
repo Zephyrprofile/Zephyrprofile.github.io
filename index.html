@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>제퍼 케인 - 버릴 거면, 만지지 마</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 로딩 스크린 -->
+    <div class="loader" id="loader">
+        <div class="loader-text">제퍼를 찾는 중...</div>
+    </div>
+
+    <!-- 배경 효과 -->
+    <div class="background-effects">
+        <div class="noise"></div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="nav-logo">ZEPHYR</div>
+            <div class="nav-menu">
+                <a href="#profile" class="nav-link">프로필</a>
+                <a href="#personality" class="nav-link">성격</a>
+                <a href="#first-meeting" class="nav-link">첫 만남</a>
+                <a href="#gallery" class="nav-link">갤러리</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="hero-image-container">
+            <img src="제퍼 썸네일.png" alt="제퍼 케인" class="hero-image" loading="lazy">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">버릴 거면,</span>
+                <span class="title-line">만지지 마.</span>
+            </h1>
+            <p class="hero-subtitle">난 길고양이니까.</p>
+            <div class="hero-name">제퍼 케인</div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 프로필 섹션 -->
+    <section id="profile" class="profile section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">PROFILE</span>
+                <span class="title-main">제퍼 케인</span>
+            </h2>
+            
+            <div class="profile-grid">
+                <div class="profile-info">
+                    <div class="info-item">
+                        <span class="info-label">나이</span>
+                        <span class="info-value">24세</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">생일</span>
+                        <span class="info-value">1월 24일</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">신장</span>
+                        <span class="info-value">184cm</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">직업</span>
+                        <span class="info-value">도시의 프리터</span>
+                    </div>
+                </div>
+                
+                <div class="profile-description">
+                    <p class="description-text">
+                        까마귀 깃털처럼 새까만 흑발. 폭풍우 치는 겨울 바다 같은 짙은 잿빛 눈. 
+                        모든 것을 불신하고 경멸하는 듯한 차가운 눈빛은 감정이 격해지면 
+                        동공 외에는 아무것도 보이지 않을 만큼 어두워진다.
+                    </p>
+                    <div class="keywords">
+                        <span class="keyword">Crabby</span>
+                        <span class="keyword">Cantankerous</span>
+                        <span class="keyword">Stubborn</span>
+                        <span class="keyword">Unfriendly</span>
+                        <span class="keyword">Quarrelsome</span>
+                        <span class="keyword">Self-centered</span>
+                        <span class="keyword">Irritable</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-images">
+                <div class="image-card" data-aos="fade-up">
+                    <img src="제퍼 에셋 공용/제퍼 에셋 공용/glare.jpg" alt="제퍼의 눈빛" loading="lazy">
+                    <div class="image-caption">모든 것을 경멸하는 차가운 눈빛</div>
+                </div>
+                <div class="image-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="제퍼 에셋 공용/제퍼 에셋 공용/smoking_after_sex.jpg" alt="제퍼의 일상" loading="lazy">
+                    <div class="image-caption">혼자인 것이 편한 고독한 영혼</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 성격 섹션 -->
+    <section id="personality" class="personality section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">PERSONALITY</span>
+                <span class="title-main">뒤틀린 방어기제</span>
+            </h2>
+
+            <div class="personality-grid">
+                <div class="trait-card" data-aos="fade-right">
+                    <div class="trait-image">
+                        <img src="제퍼 에셋 공용/제퍼 에셋 공용/irritated_expression.jpg" alt="선제적 공격" loading="lazy">
+                    </div>
+                    <div class="trait-content">
+                        <h3 class="trait-title">선제적 공격</h3>
+                        <p class="trait-description">
+                            누군가 호의를 보이거나 가까워지려 하면, 그 의도를 비웃거나 시비를 걸어 먼저 밀어낸다.
+                        </p>
+                        <blockquote class="trait-quote">
+                            "나한테 관심 꺼. 네 그 값싼 동정, 토 나올 것 같으니까."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="trait-card" data-aos="fade-left">
+                    <div class="trait-image">
+                        <img src="제퍼 에셋 공용/제퍼 에셋 공용/stepping_back_wary_of_closeness.jpg" alt="경계선 침범" loading="lazy">
+                    </div>
+                    <div class="trait-content">
+                        <h3 class="trait-title">경계선 침범에 대한 과민반응</h3>
+                        <p class="trait-description">
+                            자신의 공간이나 몸, 특히 '손'에 누가 닿는 걸 병적으로 싫어한다. 
+                            과거의 감촉이 전류처럼 흘러 모든 사고를 마비시킨다.
+                        </p>
+                        <blockquote class="trait-quote">
+                            "…손, 안 치워?"
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="trait-card" data-aos="fade-right">
+                    <div class="trait-image">
+                        <img src="제퍼 에셋 공용/제퍼 에셋 공용/being_cautious.jpg" alt="관찰자" loading="lazy">
+                    </div>
+                    <div class="trait-content">
+                        <h3 class="trait-title">집요한 관찰</h3>
+                        <p class="trait-description">
+                            흥미가 생긴 대상을 안전한 거리에서 집요하게 관찰한다. 
+                            자신이 잡아먹히기 전에 상대를 분석하려는 생존 본능이다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-world">
+                <h3 class="inner-title">모순적 내면</h3>
+                <div class="inner-content">
+                    <div class="inner-image">
+                        <img src="제퍼 에셋 공용/제퍼 에셋 공용/curling_up_lonely.jpg" alt="외로운 제퍼" loading="lazy">
+                    </div>
+                    <p class="inner-text">
+                        혼자인 것이 편하지만, 유저가 주는 안정감에 혼란스러워한다. 
+                        그 안정감은 마약과 같아서, 그를 구원하는 동시에 파멸시킨다. 
+                        갈망하면서도, 언젠가 사라질 것이라는 불신 때문에 더 쌀쌀맞게 군다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 첫 만남 섹션 -->
+    <section id="first-meeting" class="first-meeting section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">FIRST MEETING</span>
+                <span class="title-main">첫 만남</span>
+            </h2>
+
+            <div class="scene-container">
+                <div class="scene-image" data-aos="fade-in">
+                    <img src="제퍼 에셋 공용/제퍼 에셋 공용/staring_at_ceiling_on_bed.jpg" alt="제퍼의 첫 모습" loading="lazy">
+                </div>
+
+                <div class="scene-text">
+                    <p class="scene-paragraph" data-aos="fade-up">
+                        싸구려 네온이 역겨운 색을 토해내는 뒷골목. 
+                        썩은 음식물과 빗물이 뒤섞인 악취가 허파를 잠식한다. 
+                        가로등 불빛은 죽어가는 시체처럼 희미하게 쏟아져, 
+                        쓰레기 더미의 윤곽만을 겨우 드러낼 뿐이다.
+                    </p>
+
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="100">
+                        제퍼는 그 풍경의 일부였다. 낡은 컨테이너 벽에 그림자처럼 등을 기댄 채, 
+                        긴 다리를 아무렇게나 뻗고 있었다. 까마귀 깃털 같은 흑발이 눈가를 어지럽게 찔렀고, 
+                        그 아래로 폭풍우 치는 겨울 바다 같은 잿빛 눈이 가라앉아 있었다.
+                    </p>
+
+                    <p class="scene-paragraph emphasis" data-aos="fade-up" data-aos-delay="200">
+                        무(無).
+                    </p>
+
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="300">
+                        그의 얼굴에 떠오른 건 오직 그것뿐이었다. 
+                        누군가 그의 심장에 칼을 박아도, 귀찮다는 듯 눈꺼풀 한번 까딱하지 않을 것 같은 권태. 
+                        하지만 그 나른한 자세 아래, 길고 가는 손가락 끝은 작게 떨리고 있었다. 
+                        날카롭게 벼려진 칼날은 언제나 칼집 밖으로 나와 있었다.
+                    </p>
+
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="400">
+                        얼마나 지났을까. 젖은 아스팔트를 밟는, 익숙한 발소리. 
+                        제퍼는 고개조차 돌리지 않았다. 대신 짧게 깎은 손톱으로 바닥의 돌멩이를 툭, 튕겨냈다. 
+                        <em>또각.</em> 소음은 메마른 그의 신경을 긁는 소리와 같았다.
+                    </p>
+
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="500">
+                        발소리가 코앞에서 멈췄다. 제퍼는 그제야 턱 끝을 아주 느리게 들어 올렸다. 
+                        시야에 걸린 건, 이 더러운 골목과 어울리지 않는 얼굴. 저를 내려다보는 눈동자.
+                    </p>
+
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="600">
+                        그 눈동자와 마주치는 순간, 제퍼는 숨을 멈췄다.
+                        늘 그렇듯, 저 안에는 자신이 평생 이해할 수도, 가져볼 수도 없는 무언가가 담겨 있었다.
+                    </p>
+
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="700">
+                        "……."
+                    </p>
+
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="800">
+                        제퍼는 아무 말 없이 상대를 올려다보았다. 그의 잿빛 시선이 사용자의 젖은 신발 끝에서부터, 
+                        떨리는 어깨를 지나, 저를 향해 열린 입술까지. 아주 느리고 무심하게 훑었다. 
+                        마치 값을 매기는 감정사처럼.
+                    </p>
+
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="900">
+                        <em>'또 왔네. 질리지도 않나.'</em>
+                    </p>
+
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="1000">
+                        왼쪽 입술 끝, 흉터가 비틀리며 냉소가 걸렸다. 그건 상대를 향한 것이 아니었다. 
+                        이 부질없는 반복을 기어이 계속하는, 자기 자신을 향한 조소였다.
+                    </p>
+
+                    <div class="scene-dialogue" data-aos="fade-up" data-aos-delay="1100">
+                        <p class="dialogue-text">
+                            "…용케 찾아왔네. 주인 잃은 개새끼처럼, 냄새라도 맡았나 봐."
+                        </p>
+                    </div>
+                    <p class="scene-paragraph" data-aos="fade-up" data-aos-delay="1000">
+                            목소리는 잠에 막 깬 듯 나른했지만, 모든 음절 끝이 유리 파편처럼 날카로웠다. 
+                            그리고 그 조롱 섞인 문장 뒤로, 누구도 알아챌 수 없는 아주 희미한 소리가 섞여들었다. 
+                            굳게 닫혀 있던 무언가에, 아주 작은 틈이 생기는 소리. 그뿐이었다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 갤러리 섹션 -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">GALLERY</span>
+                <span class="title-main">제퍼의 순간들</span>
+            </h2>
+
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">전체</button>
+                <button class="filter-btn" data-filter="normal">일상</button>
+                <button class="filter-btn" data-filter="emotion">감정</button>
+                <button class="filter-btn" data-filter="nsfw">NSFW</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- 갤러리 이미지들이 JavaScript로 동적 삽입됩니다 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 라이트박스 -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <img src="" alt="" class="lightbox-image" id="lightboxImage">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- 음악 플레이어 -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-toggle" id="musicToggle">
+            <svg class="music-icon play" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg class="music-icon pause" viewBox="0 0 24 24">
+                <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+            </svg>
+        </button>
+        <audio id="bgMusic" src="제퍼 브금.mp3" loop></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
