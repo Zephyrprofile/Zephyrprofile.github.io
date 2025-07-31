@@ -613,6 +613,399 @@ body {
     color: var(--text-secondary);
 }
 
+/* 과거 서사 섹션 */
+.backstory {
+    background-color: var(--bg-secondary);
+}
+
+.backstory-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    align-items: start;
+}
+
+.backstory-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    filter: grayscale(0.3) contrast(1.1);
+    transition: filter 0.3s ease;
+}
+
+.backstory-image:hover img {
+    filter: grayscale(0) contrast(1.2);
+}
+
+.backstory-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.backstory-paragraph.emphasis {
+    color: var(--accent-neon);
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+}
+
+.backstory-paragraph.tragedy {
+    color: var(--accent-danger);
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+
+.backstory-paragraph.final {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-style: italic;
+    border-left: 4px solid var(--accent-neon);
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.backstory-quote {
+    font-style: italic;
+    color: var(--accent-cyan);
+    border-left: 3px solid var(--accent-cyan);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+.backstory-continuation {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.backstory-resolution {
+    background-color: var(--bg-tertiary);
+    padding: 3rem;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+}
+
+/* 성격 섹션 확장 */
+.personality-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.overview-card {
+    background-color: var(--bg-tertiary);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--accent-cyan);
+}
+
+.overview-card h3 {
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.overview-card ul {
+    list-style: none;
+}
+
+.overview-card li {
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.core-behaviors {
+    margin-bottom: 4rem;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(45deg, var(--accent-neon), var(--accent-cyan));
+}
+
+.trait-inner {
+    color: var(--accent-cyan);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+}
+
+.psychological-structure {
+    margin-top: 4rem;
+}
+
+.psychology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.psychology-card {
+    background-color: var(--bg-tertiary);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-top: 3px solid var(--accent-neon);
+    transition: transform 0.3s ease;
+}
+
+.psychology-card:hover {
+    transform: translateY(-5px);
+}
+
+.psychology-card h4 {
+    color: var(--accent-neon);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.psychology-card em {
+    color: var(--accent-cyan);
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+/* 트라우마 섹션 */
+.trauma {
+    background-color: var(--bg-primary);
+}
+
+.trauma-grid {
+    display: grid;
+    gap: 3rem;
+}
+
+.trauma-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--accent-danger);
+}
+
+.trauma-card:nth-child(even) {
+    grid-template-columns: 1fr 300px;
+}
+
+.trauma-card:nth-child(even) .trauma-image {
+    order: 2;
+}
+
+.trauma-card:nth-child(even) .trauma-content {
+    order: 1;
+}
+
+.trauma-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    filter: grayscale(0.5) contrast(1.1);
+    transition: filter 0.3s ease;
+}
+
+.trauma-card:hover .trauma-image img {
+    filter: grayscale(0.2) contrast(1.2);
+}
+
+.trauma-title {
+    color: var(--accent-danger);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.trauma-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* 섹스 특징 섹션 */
+.sexual-traits {
+    background-color: var(--bg-secondary);
+}
+
+.adult-warning {
+    background-color: var(--accent-danger);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.sexual-overview {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.sexual-tendency h3,
+.basic-attitude h3 {
+    color: var(--accent-neon);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.tendency-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tag {
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--accent-neon);
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    color: var(--accent-neon);
+    transition: var(--transition-base);
+}
+
+.tag:hover {
+    background-color: var(--accent-neon);
+    color: white;
+}
+
+.basic-attitude p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.125rem;
+}
+
+.preferred-play {
+    margin-bottom: 4rem;
+}
+
+.play-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.play-card {
+    background-color: var(--bg-tertiary);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--accent-cyan);
+    transition: transform 0.3s ease;
+}
+
+.play-card:hover {
+    transform: translateY(-3px);
+}
+
+.play-card h4 {
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.sexual-quote {
+    font-style: italic;
+    color: var(--accent-neon);
+    border-left: 3px solid var(--accent-neon);
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.dirty-talk-examples {
+    margin-bottom: 4rem;
+}
+
+.dialogue-examples {
+    display: grid;
+    gap: 2rem;
+}
+
+.dialogue-example {
+    background-color: var(--bg-tertiary);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-top: 3px solid var(--accent-neon);
+}
+
+.dialogue-example.climax {
+    border-top-color: var(--accent-danger);
+    background: linear-gradient(135deg, var(--bg-tertiary), rgba(220, 38, 38, 0.05));
+}
+
+.dialogue-situation {
+    color: var(--text-accent);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.dialogue-quote {
+    font-style: italic;
+    color: var(--accent-neon);
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-neon);
+}
+
+.dialogue-note {
+    color: var(--text-accent);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+.dialogue-psychology {
+    color: var(--accent-cyan);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.most-important {
+    background-color: var(--bg-primary);
+    padding: 3rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--accent-neon);
+}
+
+.important-note {
+    text-align: center;
+}
+
+.final-quote {
+    font-style: italic;
+    color: var(--accent-neon);
+    font-size: 1.3rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
 /* 첫 만남 섹션 */
 .first-meeting {
     background-color: var(--bg-secondary);
@@ -1002,5 +1395,70 @@ body {
         padding: 0 1rem;
         max-width: 100%;
         overflow: hidden;
+    }
+
+    /* 과거 서사 모바일 */
+    .backstory-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .backstory-image img {
+        height: 250px;
+    }
+
+    .backstory-resolution {
+        padding: 2rem;
+    }
+
+    /* 성격 섹션 모바일 */
+    .personality-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .psychology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 트라우마 모바일 */
+    .trauma-card,
+    .trauma-card:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .trauma-card:nth-child(even) .trauma-image,
+    .trauma-card:nth-child(even) .trauma-content {
+        order: unset;
+    }
+
+    /* 섹스 특징 모바일 */
+    .sexual-overview {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .play-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tendency-tags {
+        justify-content: center;
+    }
+
+    .adult-warning {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .dialogue-example {
+        padding: 1.5rem;
+    }
+
+    .most-important {
+        padding: 2rem;
+    }
+
+    .final-quote {
+        font-size: 1.1rem;
     }
 } 
